@@ -5,9 +5,19 @@ body {
 .input {
     width:30%;
     height:10%;
-    padding:10px;
+    padding-left:40px;
+    padding-right:0px;
     font-size:40px;
     position:absolute;
     left:50%;
+    top:20vh;
     transform: translate(-50%); 
+    border-radius: 30px;;
+    caret-color: blue;
+    border: 0px;
+}
+
+.input:focus {
+    outline: none;
+    border: none;
 }
