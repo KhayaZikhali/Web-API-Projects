@@ -1,11 +1,21 @@
 const input = document.querySelector(".input")
-const rl = `https://en.wiktionary.org/w/api.php?action=parse&page=dog&prop=wikitext&format=json`
 const url =`https://en.wiktionary.org/w/api.php?action=parse&format=json&prop=text|revid|displaytitle&callback=?&page=hello`
 
+
+// create function to listen for clicks 
+// return the data 
+// create the boxes for each of the datum
+
+function click(){
 fetch(url)
     .then(response => {return response.json()})
-    .then(response => {console.log(response)})
+    .then(data => {console.log(data)})
+    console.log("max")
+}
 
-document.addEventListener("click", ()=> {
-      console.log(input.innerText)
-})
+document.addEventListener("keyup",(event)=> {
+   if (event.key = "13"){
+       click()
+   }
+    
+} )
